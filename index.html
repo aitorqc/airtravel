@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="./public/carta-a.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Airtravel</title>
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Top Bar -->
+        <div id="top" class="top-bar">
+            <h3 class="intro">Introducing the new Airtravel</h3>
+            <p>Learn more</p>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div>
+                <h1>airtravel</h1>
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="input-container">
+                        <input type="text" placeholder="Search Properties">
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu">
+                <ul class="nav-menu">
+                    <li>
+                        <a onclick="closeMenu()" href="#listings" class="nav-link">Listings</a>
+                    </li>
+                    <li>
+                        <a onclick="closeMenu()" href="#featured" class="nav-link">Featured</a>
+                    </li>
+                    <li>
+                        <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+                    </li>
+                </ul>
+                <div class="mobile" onclick="mobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- sort bar -->
+        <div class="sort-bar">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>House</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <p>Artic</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <p>Space</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tree"></i>
+                <p>Trees</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <p>City</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-campground"></i>
+                <p>Camping</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p>Beach</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball"></i>
+                <p>Games</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- listings -->
+    <div class="container">
+        <div id="listings" class="listings">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3285725/pexels-photo-3285725.jpeg" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/09/16/12/53/hotel-1673952_960_720.jpg" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_960_720.jpg" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2019/12/27/09/57/dubai-4722074_960_720.jpg" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2018/12/29/14/11/barcelona-3901449_960_720.jpg" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1458457/pexels-photo-1458457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/774042/pexels-photo-774042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>City, State</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+                    <p><span class="grey">Jun 1 - 7</span></p>
+                    <p>$749 night</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- featured -->
+    <div class="container">
+        <div id="featured"  class="featured">
+            <div class="title featured">
+                <h1>Featured</h1>
+                <div></div>
+            </div>
+            <div class="featured-wrapper">
+                <div class="main">
+                    <img src="https://images.pexels.com/photos/3285725/pexels-photo-3285725.jpeg" alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+            </div>
+        </div>
+
+        <div id="popular" class="featured">
+            <div class="title popular">
+                <h1>Popular</h1>
+                <div></div>
+            </div>
+            <div class="featured-wrapper popular">
+                <div class="">
+                    <img src="https://images.pexels.com/photos/3285725/pexels-photo-3285725.jpeg" alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+                <div class="">
+                    <img src="https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+                <div class="main">
+                    <img src="https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="/">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll to top -->
+    <div class="center">
+        <a href="#top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <div class="footer">
+            <ul class="left-menu">
+                <li>AirTravel</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Destinations</li>
+            </ul>
+            <ul class="right-menu">
+                <li>Support</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
